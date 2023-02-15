@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Website Tab Name -->>
+<head>
+    <title>Great Cliffs of California</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<!-- Body -->
+<body id="activities">
+    <div id="container" class="container-fluid"> <!-- Add container class -->
+      <div class="main-header sticky-top">
+        <div class="logo">
+            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Add navbar class -->
+        
+            <a class="navbar-brand mr-auto" href="#"></a>
+            <!-- Hamburger Menu -->
+            <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
+                data-target = "#navbarContent" 
+                aria-controls = "navbarContent" aria-expanded = "false" 
+                aria-label = "Toggle navigation">
+                <span class = "navbar-toggler-icon"></span> <!-- span tag is an inline element -->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav"> <!-- Add navbar-nav class -->
+                    <li class="nav-item"> <!-- Add nav-item class -->
+                    <a class="nav-link" href="index.html">Home</a>  <!-- Add nav-link class -->
+                    </li>
+                    <li class="nav-item"> <!-- Add nav-item class -->
+                    <a class="nav-link" href="cliffs.html">Cliffs</a>  <!-- Add nav-link class -->
+                    </li>
+                    <li class="nav-item active"> <!-- Add nav-item class -->
+                    <a class="nav-link active" href="activities.html">Activities</a>  <!-- Add nav-link class -->
+                    </li>
+                    <li class="nav-item"> <!-- Add nav-item class -->
+                    <a class="nav-link" href="contact.html">Contact</a>  <!-- Add nav-link class -->
+                    </li>
+                </ul>
+            </div>                                                              
+        </nav>   
+      </div>
+      
+      <header>
+      </header>
+        <!-- Add a Clock -->
+        <!-- <section id="timeofday">
+            <span>Your Current Local Time: </span>
+            <span id="clock"></span>
+        </section> -->
+        <!-- Main Content -->
+        <main>
+            <h1>Activities</h1>
+            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below: </p>
+            <!-- Example: Create a Table -->
+            <table id="table"> 
+                <caption id="caption">Activities at the Cliffs</caption>
+                <thead id="thead">
+                    <tr>
+                        <th class="site">Activity</th>
+                        <th class="site">West Cliff</th>
+                        <th class="site">North Cliff</th>
+                        <th class="site">East Cliff</th>
+                        <th class="site">South Cliff</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td id="category">Hiking</td>
+                        <td id="events">College Hikes</td>
+                        <td id="events">Family Fun</td>
+                        <td id="events">Treasure Trails</td>
+                        <td id="events">Canyon Explorer</td>
+                    </tr>
+                    <tr>
+                        <td id="category">Kayak</td>
+                        <td id="events">Western Kayak Meetup</td>
+                        <td id="na">Not Available</td>
+                        <td id="events">Youth Kayaking</td>
+                        <td id="events">Kayak Down</td>
+                    </tr>
+                    <tr>
+                        <td id="category">Skydiving</td>
+                        <td id="events">Seacliff Diving</td>
+                        <td id="events">Sky is the limit</td>
+                        <td id="na">Not Available</td>
+                        <td id="events">Sky Diving for Beginners</td>
+                    </tr>
+                    <tr>
+                        <td id="category">Biking</td>
+                        <td id="events">Bicycle for One</td>
+                        <td id="na">Not Available</td>
+                        <td id="events">Bike Meetup Group</td>
+                        <td id="na">Not Available</td>
+                    </tr>
+                    <tr>
+                        <td id="category">Camping</td>
+                        <td id="events">Youth Camp</td>
+                        <td id="events">Rent a Tent</td>
+                        <td id="events">Campground Adventure</td>
+                        <td id="events">Sunset Camping</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="displaySelected">
+                <div id="result">
+                    <h4>My selected activities to enquire:</h4>
+                </div>
+                <div id="sendinfo">
+                    <input type="email" placeholder="johndoe@gmail.com">
+                    <button>Get info</button>
+                </div>
+            </div>
+        </main>
+        <!-- Section Content -->       
+        <section>
+        <ul id="partners" class="grid_system">
+            <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                </li>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                </li>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                </li>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                </li>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                </li>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <li class="partner">
+                <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                </li>
+            </div>
+            </div>
+            
+        </ul>
+        </section>    
+        <!-- Footer -->
+        <footer>
+            <div id="nondisclaimer">
+                <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <div id="disclaimer">
+            <p>This website is designed and created solely for educational 
+                purposes only at Westcliff University. All contents are not 
+                intended for any commercial gain or use.
+            </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Codes -->
+
+    <!-- Activities -->
+    <script src="js/activity_eq_method.js"></script>
+
+    <!-- Bootstrap jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
