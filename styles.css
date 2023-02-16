@@ -20,7 +20,7 @@ header {
     background-size: 100% 400px;
 }
 .main-header {
-    background-color:rgba(38, 41, 61, 0.7) ;
+    background-color:rgba(38, 41, 61, 0.8) ;
     width: 701px;
     margin: 2em auto 1em auto;
     min-height: 100px;
@@ -58,7 +58,7 @@ header {
     line-height: 80px;
     text-transform: uppercase;
     font-size: 14px;
-    background-color:rgba(38, 41, 61, 0.7) ;
+    background-color:rgba(38, 41, 61, 0.2) ;
     color: #fff;
 }
 .nav-link {
@@ -217,7 +217,9 @@ table {
     font-size: 1.3em;
     font-weight: bold;
     text-align: center;
+    caption-side:top
 }
+
 thead {
     background-color: #bde1ff;
     text-align: center;
