@@ -24,6 +24,7 @@
 
 <!-- Body -->
 <body id="activities">
+    
     <div id="container" class="container-fluid"> <!-- Add container class -->
       <div class="main-header sticky-top">
         <div class="logo">
@@ -60,7 +61,7 @@
         </nav>   
       </div>
       
-      <header>
+      <header id="activity-header">
       </header>
         <!-- Add a Clock -->
         <!-- <section id="timeofday">
@@ -122,7 +123,7 @@
                 </tbody>
             </table>
 
-            <div id="displaySelected">
+            <!-- <div id="displaySelected">
                 <div id="result">
                     <h4>My selected activities to enquire:</h4>
                 </div>
@@ -130,7 +131,41 @@
                     <input type="email" placeholder="johndoe@gmail.com">
                     <button>Get info</button>
                 </div>
+            </div> -->
+            
+
+            <!-- Button to Open the Modal -->
+            <button type="button" id="modalbtn" class="btn" data-toggle="modal" data-target="#myModal"> <!-- data-target= "modal ID"-->>
+                Open modal
+            </button>
+            <!-- The Modal 一开始是隐藏的  点击后出现-->
+            <div class="modal" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialogue" role="document">
+                    <div class="modal-content" style="max-width: 500px;"> <!-- 加了box 和 关闭x -->>
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">My selected activities to enquire:</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>    
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div id="result">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal footer 点击close关闭Modal  通过data-dismiss -->
+                        <div class="modal-footer" style="display: inline;">
+                            <button type="button" style="height: auto;" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                            <button type="button" style="height: auto;" class="btn btn-primary">Get Info</button>
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
+
+
         </main>
         <!-- Section Content -->       
         <section>
@@ -192,7 +227,7 @@
     <!-- JavaScript Codes -->
 
     <!-- Activities -->
-    <script src="js/activity_eq_method.js"></script>
+    <script src="js/activity_modal.js"></script>
 
     <!-- Bootstrap jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -5,23 +5,64 @@ header {
 }
 #home {
     background: no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
+    background-size: contain;
+    min-height: 400px;
 }
-#activities  {
-    background: no-repeat white url(images/runfly.jpg);
-    background-size: 100% 400px;
+
+/* Activity header width width 992 and lower */
+@media only screen and (max-width: 992px) {
+    #activity-header  {
+        min-height: 600px;
+        width: auto;
+        background: no-repeat white url(images/runfly.jpg);
+        background-size: contain;
 }
+}
+/* Activity header width width 992 and higher */
+@media only screen and (min-width: 993px) {
+    #activity-header  {
+        min-height: 800px;
+        width: auto;
+        background: no-repeat white url(images/runfly.jpg);
+        background-size: contain;
+}
+} 
+
 #contact  {
     background: no-repeat white url(images/cliff_rock.jpg);
-    background-size: 100% 400px;
+    background-size: contain;
+    min-height: 400px;
 }
+
+/* Activity header width width 992 and lower */
+@media only screen and (max-width: 992px) {
+    #activity-header  {
+        min-height: 600px;
+        width: auto;
+        background: no-repeat white url(images/runfly.jpg);
+        background-size: contain;
+}
+}
+/* Activity header width width 992 and higher */
+@media only screen and (min-width: 993px) {
+    #activity-header  {
+        min-height: 800px;
+        width: auto;
+        background: no-repeat white url(images/runfly.jpg);
+        background-size: contain;
+}
+} 
+
+
+
 #cliffs {
     background: no-repeat white url(images/forest_cliff.jpg);
-    background-size: 100% 400px;
+    background-size: contain;
+    min-height: 400px;
 }
 .main-header {
     background-color:rgba(38, 41, 61, 0.8) ;
-    width: 701px;
+    max-width: 701px;
     margin: 2em auto 1em auto;
     min-height: 100px;
     height: 104px;
@@ -80,7 +121,7 @@ header {
     float: right;
 }
 .navbar-nav {
-    width: 100px;
+    max-width: 100px;
     float: right;
 }
 #navbarContent {
@@ -104,8 +145,8 @@ header {
 
 /* Main */
 main {
-    padding: 3em 6em 1em 5.5em;
-    margin: 1em 0;
+    padding: 10px 6em 1em 5.5em;
+    margin: 10px 0;
     font-family:Arial, Helvetica, sans-serif;
 }
 main h1 {
@@ -246,6 +287,9 @@ td:first-child {
 }
 
 /* Table Toggle */
+#modalbtn {
+    display: none;
+}
 #events.active {
     background: #9ed034;
     color: #fff;
@@ -253,8 +297,9 @@ td:first-child {
 #events {
     cursor: pointer;
 }
-#displaySelected {
-    visibility: hidden;
+
+/* #displaySelected {
+
     margin: 2em auto;
     width: 800px;
     height: 200px;
@@ -264,8 +309,8 @@ td:first-child {
 #displaySelected #result, #displaySelected #sendinfo {
     display: inline-block;
     margin: 0;
-}
-#result {
+} */
+/* #result {
     min-height: 50px;
     width: 400px;
     padding: 0;
@@ -273,7 +318,7 @@ td:first-child {
 #result h4 {
     margin-bottom: 1em;
     font-size: 1.15em;
-}
+} */
 #sendinfo input[type="email"] {
     width: 300px;
     display: inline-block;
@@ -375,6 +420,7 @@ input[type="submit"] {
     font-size: large;
     font-weight: bold;
     margin: 20px 0 30px 480px;
+    display: inline;
 }
 
 /* Random Number Generator */
@@ -456,7 +502,7 @@ input[name="randomecode"] {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
       }
       main {
-        padding: 3em 1em 3em 1em;
+        padding: 10px 1em 3em 1em;
         margin: 0;
       }
       #home .main-col-content {

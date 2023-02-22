@@ -24,7 +24,7 @@
 </head>
 
 <!-- Body -->
-<body id="contact" onload="disableButton(true)">
+<body onload="disableButton(true)">
     <!--Container-->
     <div id="container" class="container-fluid"> <!-- Add container class -->
       <div class="main-header sticky-top">
@@ -62,7 +62,7 @@
         </nav>   
       </div>
       
-      <header>
+      <header id="contact">
       </header>
          <!-- Add a Clock -->
          <!-- <section id="timeofday">
@@ -89,7 +89,8 @@
                 </div>
             </div>
 
-            <form action="/contact" method="post">  
+            <div class="d-flex flex-row">  
+                <form action="/contact" method="post">  
                 <fieldset>  
                     <legend>Contact Form</legend>
                     <div class="textbox">
@@ -132,7 +133,8 @@
                         <button type="submit" class="btn btn-primary"><span class="fa fa-paper-plane"></span> Send</button>
                     </div> 
                 </fieldset>  
-            </form>
+                </form>
+            </div> 
         </main>
 
         <!-- Section Content -->       
