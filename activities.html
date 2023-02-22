@@ -132,41 +132,42 @@
                     <button>Get info</button>
                 </div>
             </div> -->
-            
-
-            <!-- Button to Open the Modal -->
-            <button type="button" id="modalbtn" class="btn" data-toggle="modal" data-target="#myModal"> <!-- data-target= "modal ID"-->>
-                Open modal
-            </button>
-            <!-- The Modal 一开始是隐藏的  点击后出现-->
-            <div class="modal" id="myModal" tabindex="-1" role="dialog">
-                <div class="modal-dialogue" role="document">
-                    <div class="modal-content" style="max-width: 500px;"> <!-- 加了box 和 关闭x -->>
-                
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">My selected activities to enquire:</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>    
-                        
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <div id="result">
-                            </div>
-                        </div>
-                        
-                        <!-- Modal footer 点击close关闭Modal  通过data-dismiss -->
-                        <div class="modal-footer" style="display: inline;">
-                            <button type="button" style="height: auto;" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
-                            <button type="button" style="height: auto;" class="btn btn-primary">Get Info</button>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
 
 
         </main>
+
+        <!-- Button to Open the Modal: Hidden -->
+        <button type="button" id="modalbtn" class="btn" data-toggle="modal" data-target="#myModal"> <!-- data-target= "modal ID"-->>
+            Open modal
+        </button>
+        <!-- The Modal 一开始是隐藏的  点击后出现-->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialogue" role="document">
+                <div class="modal-content" style="max-width: 700px;"> <!-- 加了box 和 关闭x -->>
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">My selected activities to enquire:</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>    
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div id="result">
+                        </div>
+                    </div>
+                    
+                    <!-- Modal footer 点击close关闭Modal  通过data-dismiss -->
+                    <div class="modal-footer" style="display: inline;">
+                        <button type="button" style="height: auto;" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                        <button type="button" style="height: auto;" class="btn btn-primary">Get Info</button>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+
         <!-- Section Content -->       
         <section>
         <ul id="partners" class="grid_system">
